@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/add">Show All Todo</a><br />
+Task name:<span th:text="${todo.task name}" ></span><br />
+Due date :<span th:text="${todo.due date}" ></span><br />
+Priority :<span th:text="${todo.priority}" ></span><br />
+<a th:hef="@{delete/{id} (id=${course.id})}}">Delete this todo</a>
+</body>
+</html>
